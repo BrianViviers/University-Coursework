@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="AntSimulation.Ant">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <AssociationLine Name="NestKnown" Type="AntSimulation.Nest" ManuallyRouted="true">
+      <Path>
+        <Point X="3.75" Y="7.625" />
+        <Point X="11.312" Y="7.625" />
+        <Point X="11.312" Y="12" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>JAABCkAAIAMAAgIEGCCBCAgBAABgBwASIoRAgAAARBs=</HashCode>
+      <FileName>Ant.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="NestKnown" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="AntSimulation.AntSimulationForm">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQSACJAsZCAQBEIBoBC5AAIXAkAIAAMEJHAgKEAAjBg=</HashCode>
+      <FileName>AntSimulationForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AntSimulation.AntSimulator">
+    <Position X="6.75" Y="11.5" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="AntSimulation.AntSimulator.GameState" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AntSimulator.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <AssociationLine Name="antFollowed" Type="AntSimulation.Ant" ManuallyRouted="true">
+      <Path>
+        <Point X="8.25" Y="13.011" />
+        <Point X="8.625" Y="13.011" />
+        <Point X="8.625" Y="8.25" />
+        <Point X="3.75" Y="8.25" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>EARAEHAEBACAAxAgAAQCCAIUQAAKBBwAAAKSIACCEAU=</HashCode>
+      <FileName>AntSimulator.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="antFollowed" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Field Name="blackAntList" />
+      <Field Name="redAntList" />
+      <Field Name="blackNestList" />
+      <Field Name="redNestList" />
+      <Field Name="foodList" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="AntSimulation.BlackAnt">
+    <Position X="1.25" Y="13.5" Width="1.5" />
+    <AssociationLine Name="closerFood" Type="AntSimulation.Food" ManuallyRouted="true">
+      <Path>
+        <Point X="2.375" Y="18.521" />
+        <Point X="2.375" Y="20.117" />
+        <Point X="10.875" Y="20.117" />
+        <Point X="10.875" Y="18.875" />
+        <Point X="11" Y="18.875" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="FoodKnown" Type="AntSimulation.Food" ManuallyRouted="true">
+      <Path>
+        <Point X="1.75" Y="18.521" />
+        <Point X="1.75" Y="20.374" />
+        <Point X="12.25" Y="20.374" />
+        <Point X="12.25" Y="19.238" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>BCBAAAAAAIAQIEAABAAAAoCMAAQAAAAAAAAAAAJgAQA=</HashCode>
+      <FileName>BlackAnt.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="closerFood" />
+      <Property Name="FoodKnown" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="AntSimulation.Food">
+    <Position X="11" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAEAAAAAAAgAAAAIAAAACAAQAABAAAAAQAEAAAAA=</HashCode>
+      <FileName>Food.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AntSimulation.Nest">
+    <Position X="11" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAACAAAAgAAAAAAAAEAAAARAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Nest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AntSimulation.RedAnt">
+    <Position X="3.25" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAIAAAABAAQIEAABAAAAACgQAAAAAAAAAAABAIAAAA=</HashCode>
+      <FileName>RedAnt.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AntSimulation.Program">
+    <Position X="6.75" Y="8.75" Width="1.5" />
+    <AssociationLine Name="antSimulationForm" Type="AntSimulation.AntSimulationForm" ManuallyRouted="true">
+      <Path>
+        <Point X="6.75" Y="8.938" />
+        <Point X="6.375" Y="8.938" />
+        <Point X="6.375" Y="10.938" />
+        <Point X="3.083" Y="10.938" Type="JumpStart" />
+        <Point X="2.917" Y="10.938" Type="JumpEnd" />
+        <Point X="2" Y="10.938" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAAAAAQ=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="antSimulator" />
+      <Field Name="antSimulationForm" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

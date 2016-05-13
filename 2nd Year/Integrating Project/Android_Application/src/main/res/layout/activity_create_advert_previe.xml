@@ -1,0 +1,193 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        tools:context="com.richardimms.www.android0303.Activities.AdvertDetailsActivity"
+        android:padding="5dp">
+        <TextView
+            android:id="@+id/txtAdvertTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:textSize="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:padding="5dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:id="@+id/imgAdvert"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+
+            android:paddingBottom="10dp"
+            android:layout_below="@+id/txtAdvertTitle"
+            android:layout_centerHorizontal="true"
+            android:padding="5dp" />
+
+        <TextView
+            android:id="@+id/lblAdvertDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Advert Description:"
+            android:layout_below="@+id/imgAdvert"
+            android:padding="5dp"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtDescripton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:layout_below="@id/lblAdvertDescription"
+            android:padding="5dp"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/lblCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Category: "
+            android:layout_below="@+id/txtDescripton"
+            android:padding="5dp"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtAdvertCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtDescripton"
+            android:layout_toRightOf="@+id/lblCategory"
+            android:text="New Text"
+            android:padding="5dp"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/lblItemType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Item Type: "
+            android:layout_below="@id/lblCategory"
+            android:padding="5dp"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtItemType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:layout_below="@id/lblCategory"
+            android:layout_toRightOf="@id/lblItemType"
+            android:padding="5dp"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/lblTransport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Transport: "
+            android:layout_below="@id/txtItemType"
+            android:padding="5dp"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtTransport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:layout_below="@id/txtItemType"
+            android:layout_toRightOf="@id/lblTransport"
+            android:padding="5dp"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/lblAdvertType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Advert Type: "
+            android:layout_below="@id/lblTransport"
+            android:padding="5dp"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtAdvertType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:layout_below="@id/lblTransport"
+            android:layout_toRightOf="@id/lblAdvertType"
+            android:padding="5dp"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/lblAdvertCost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:text="Advert Cost"
+            android:layout_below="@id/txtAdvertType"
+            android:padding="5dp"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtAdvertCost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:layout_below="@id/txtAdvertType"
+            android:layout_toRightOf="@id/lblAdvertCost"
+            android:padding="5dp"
+            android:textSize="16dp" />
+        <Button
+            android:id="@+id/btnEditAdvert"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Edit Advert"
+            android:layout_gravity="center_horizontal"
+            android:padding="15dp"
+            android:background="@drawable/round_button"
+            android:layout_below="@+id/lblAdvertCost"
+            android:layout_alignParentStart="true"
+            android:layout_margin="15dp" />
+        <Button
+            android:id="@+id/btnConfirmAdvert"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Confirm Advert"
+            android:layout_gravity="center_horizontal"
+            android:padding="15dp"
+            android:background="@drawable/round_button"
+            android:layout_below="@+id/txtAdvertCost"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="15dp" />
+    </RelativeLayout>
+</ScrollView>
+
+    <ListView
+        android:id="@+id/left_drawer"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#ff90caf9"
+        android:choiceMode="singleChoice"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"
+        android:padding="5dp" />
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
+  <Asset Type="Pipeline:BuildItemCollection">
+    <Item>
+      <Source>images\AntFood.png</Source>
+      <Name>images\AntFood</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Brian\Dropbox\Modules - Year 1\SOFT144\Assignment\AntSimulation\AntSimulation\AntSimulation\bin\x86\Debug\Content\images\AntFood.xnb</Output>
+      <Time>2014-04-20T15:21:51+01:00</Time>
+    </Item>
+    <Item>
+      <Source>images\RedAntNest.png</Source>
+      <Name>images\RedAntNest</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Brian\Dropbox\Modules - Year 1\SOFT144\Assignment\AntSimulation\AntSimulation\AntSimulation\bin\x86\Debug\Content\images\RedAntNest.xnb</Output>
+      <Time>2014-04-18T13:50:40+01:00</Time>
+    </Item>
+    <Item>
+      <Source>images\BlackAnt.png</Source>
+      <Name>images\BlackAnt</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Brian\Dropbox\Modules - Year 1\SOFT144\Assignment\AntSimulation\AntSimulation\AntSimulation\bin\x86\Debug\Content\images\BlackAnt.xnb</Output>
+      <Time>2014-04-10T00:52:13+01:00</Time>
+    </Item>
+    <Item>
+      <Source>images\BlackAntNest.png</Source>
+      <Name>images\BlackAntNest</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Brian\Dropbox\Modules - Year 1\SOFT144\Assignment\AntSimulation\AntSimulation\AntSimulation\bin\x86\Debug\Content\images\BlackAntNest.xnb</Output>
+      <Time>2014-04-18T14:32:15+01:00</Time>
+    </Item>
+    <Item>
+      <Source>images\BlackAntWithFood.png</Source>
+      <Name>images\BlackAntWithFood</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Brian\Dropbox\Modules - Year 1\SOFT144\Assignment\AntSimulation\AntSimulation\AntSimulation\bin\x86\Debug\Content\images\BlackAntWithFood.xnb</Output>
+      <Time>2014-04-20T15:21:08+01:00</Time>
+    </Item>
+    <Item>
+      <Source>images\RedAnt.png</Source>
+      <Name>images\RedAnt</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Brian\Dropbox\Modules - Year 1\SOFT144\Assignment\AntSimulation\AntSimulation\AntSimulation\bin\x86\Debug\Content\images\RedAnt.xnb</Output>
+      <Time>2014-04-10T19:43:45+01:00</Time>
+    </Item>
+    <Item>
+      <Source>images\RedAntWithFood.png</Source>
+      <Name>images\RedAntWithFood</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Brian\Dropbox\Modules - Year 1\SOFT144\Assignment\AntSimulation\AntSimulation\AntSimulation\bin\x86\Debug\Content\images\RedAntWithFood.xnb</Output>
+      <Time>2014-04-20T15:21:40+01:00</Time>
+    </Item>
+    <Item>
+      <Source>images\Ground.jpg</Source>
+      <Name>images\Ground</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Brian\Dropbox\Modules - Year 1\SOFT144\Assignment\AntSimulation\AntSimulation\AntSimulation\bin\x86\Debug\Content\images\Ground.xnb</Output>
+      <Time>2014-04-20T15:24:55+01:00</Time>
+    </Item>
+    <BuildSuccessful>true</BuildSuccessful>
+    <Settings>
+      <ContentProjectGUID>{B86E9B49-ADFD-4923-839D-9A01E7FA8C16}</ContentProjectGUID>
+      <TargetPlatform>Windows</TargetPlatform>
+      <TargetProfile>Reach</TargetProfile>
+      <BuildConfiguration>Debug</BuildConfiguration>
+      <CompressContent>false</CompressContent>
+      <RootDirectory>C:\Users\Brian\Dropbox\Modules - Year 1\SOFT144\Assignment\AntSimulation\AntSimulation\AntSimulationContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Brian\Dropbox\Modules - Year 1\SOFT144\Assignment\AntSimulation\AntSimulation\AntSimulation\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Brian\Dropbox\Modules - Year 1\SOFT144\Assignment\AntSimulation\AntSimulation\AntSimulation\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Brian\Dropbox\Modules - Year 1\SOFT144\Assignment\AntSimulation\AntSimulation\AntSimulation\bin\x86\Debug\Content\</OutputDirectory>
+    </Settings>
+    <Assemblies>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
+        <Value>2011-09-01T17:22:30+01:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
+        <Value>2011-09-01T17:22:30+01:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
+        <Value>2011-09-01T17:22:30+01:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
+        <Value>2011-09-01T17:22:30+01:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
+        <Value>2011-09-01T17:22:30+01:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
+        <Value>2011-09-01T17:22:30+01:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2014-02-25T15:56:37.140625+00:00</Value>
+      </Assembly>
+    </Assemblies>
+  </Asset>
+</XnaContent>

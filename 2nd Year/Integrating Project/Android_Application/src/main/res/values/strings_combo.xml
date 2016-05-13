@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string-array name="combo_advertType">
+    <item>Offer</item>
+    <item>Request</item>
+</string-array>
+<string-array name="combo_itemType">
+    <item>Product</item>
+    <item>Service</item>
+</string-array>
+</resources>

@@ -1,0 +1,213 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffffff"
+        android:padding="30dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center_horizontal">
+
+            <TextView
+                android:id="@+id/txtDashboard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dashboard"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <ImageView
+                android:id="@+id/imgLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtDashboard"
+                android:layout_gravity="top|center_horizontal"
+                android:background="@drawable/lets" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical">
+
+            <TextView
+                android:id="@+id/txtCurrentAdverts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/listAdvertButton"
+                android:layout_alignRight="@+id/listAdvertButton"
+                android:gravity="center"
+                android:text="@string/browse_adverts"
+                android:textSize="10dp" />
+
+            <ImageView
+                android:id="@+id/listAdvertButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtCurrentAdverts"
+                android:layout_margin="5dp"
+                android:background="#ff90caf9"
+                android:elevation="5dp"
+                android:padding="10dp"
+                android:src="@drawable/listadverts" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/txtCreateAdvert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/createadvertButton"
+                android:layout_alignRight="@+id/createadvertButton"
+                android:gravity="center"
+                android:text="@string/create_advert"
+                android:textSize="10dp" />
+
+            <ImageView
+                android:id="@+id/createadvertButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtCreateAdvert"
+                android:layout_centerVertical="true"
+                android:layout_margin="5dp"
+                android:background="#ff90caf9"
+                android:elevation="5dp"
+                android:padding="10dp"
+                android:src="@drawable/createadvert" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right">
+
+            <TextView
+                android:id="@+id/txtBids"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/bidButton"
+                android:layout_alignRight="@+id/bidButton"
+                android:gravity="center"
+                android:singleLine="false"
+                android:text="@string/view_bids"
+                android:textSize="12dp" />
+
+            <ImageView
+                android:id="@+id/bidButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/createadvertButton"
+                android:layout_below="@id/txtBids"
+                android:layout_margin="5dp"
+                android:background="#ff90caf9"
+                android:elevation="5dp"
+                android:padding="10dp"
+                android:src="@drawable/bid" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|left">
+
+            <TextView
+                android:id="@+id/txtTransactions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/transactionButton"
+                android:layout_alignRight="@+id/transactionButton"
+                android:gravity="center"
+                android:text="@string/transaction"
+                android:textSize="12dp" />
+
+            <ImageView
+                android:id="@+id/transactionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtTransactions"
+                android:layout_gravity="left|bottom"
+                android:layout_margin="5dp"
+                android:background="#ff90caf9"
+                android:elevation="5dp"
+                android:padding="10dp"
+                android:src="@drawable/transaction" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal">
+
+            <TextView
+                android:id="@+id/txtProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/profileButton"
+                android:layout_alignRight="@+id/profileButton"
+                android:gravity="center"
+                android:text="@string/profile"
+                android:textSize="12dp" />
+
+            <ImageView
+                android:id="@+id/profileButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtProfile"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_margin="5dp"
+                android:background="#ff90caf9"
+                android:elevation="5dp"
+                android:padding="10dp"
+                android:src="@drawable/profile" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right">
+
+            <TextView
+                android:id="@+id/txtRules"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/rulesButton"
+                android:layout_alignRight="@+id/rulesButton"
+                android:gravity="center"
+                android:text="My Adverts"
+                android:textSize="12dp" />
+
+            <ImageView
+                android:id="@+id/rulesButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtRules"
+                android:layout_margin="5dp"
+                android:layout_toEndOf="@+id/txtDashboard"
+                android:background="#ff90caf9"
+                android:elevation="5dp"
+                android:padding="10dp"
+                android:src="@drawable/rules" />
+        </RelativeLayout>
+
+    </FrameLayout>
+    <!-- The navigation drawer -->
+    <ListView
+        android:id="@+id/left_drawer"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#ff90caf9"
+        android:choiceMode="singleChoice"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"
+        android:padding="5dp" />
+</android.support.v4.widget.DrawerLayout>

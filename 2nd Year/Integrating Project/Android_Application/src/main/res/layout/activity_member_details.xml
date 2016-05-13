@@ -1,0 +1,241 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffffff"
+        android:orientation="vertical"
+        tools:context="com.richardimms.www.android0303.Activities.MemberDetailsActivity"
+        android:padding="5dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/forename"
+            android:id="@+id/textView"
+            android:layout_marginTop="31dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/surname"
+            android:id="@+id/textView2"
+            android:layout_marginTop="25dp"
+            android:layout_below="@+id/textView"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/address_1"
+            android:id="@+id/textView3"
+            android:layout_below="@+id/datePicker"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/address_2"
+            android:id="@+id/textView4"
+            android:layout_below="@+id/textView3"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="27dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/city"
+            android:id="@+id/textView5"
+            android:layout_below="@+id/textView6"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="28dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/postcode"
+            android:id="@+id/textView6"
+            android:layout_below="@+id/textView4"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="31dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/email"
+            android:id="@+id/textView7"
+            android:layout_alignTop="@+id/textView9"
+            android:layout_toEndOf="@+id/textView9" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/contact_number"
+            android:id="@+id/textView8"
+            android:layout_marginTop="74dp"
+            android:layout_below="@+id/textView6"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView9"
+            android:layout_below="@+id/textView8"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="25dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/date_of_birth"
+            android:id="@+id/textView11"
+            android:layout_below="@+id/textView2"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="25dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/txtForename"
+            android:layout_alignBottom="@+id/textView"
+            android:layout_alignStart="@+id/txtContact" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/txtSurname"
+            android:layout_above="@+id/textView11"
+            android:layout_alignStart="@+id/txtForename" />
+
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPostalAddress"
+            android:ems="10"
+            android:id="@+id/txtAddress1"
+            android:layout_above="@+id/textView4"
+            android:layout_alignStart="@+id/txtSurname" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPostalAddress"
+            android:ems="10"
+            android:id="@+id/txtAddress2"
+            android:layout_alignBottom="@+id/textView4"
+            android:layout_alignStart="@+id/txtAddress1" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPostalAddress"
+            android:ems="10"
+            android:id="@+id/txtPostcode"
+            android:layout_above="@+id/textView8"
+            android:layout_alignStart="@+id/txtAddress2" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPostalAddress"
+            android:ems="10"
+            android:id="@+id/txtCity"
+            android:layout_alignBottom="@+id/textView5"
+            android:layout_alignStart="@+id/txtPostcode" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:ems="10"
+            android:id="@+id/txtContact"
+            android:layout_alignBottom="@+id/textView8"
+            android:layout_toEndOf="@+id/textView8" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/txtEmail"
+            android:layout_below="@id/txtContact"
+            android:layout_toEndOf="@+id/textView8" />
+
+    <RelativeLayout
+        android:id="@+id/datePicker"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView11"
+        android:layout_margin="10dp">
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerDay"
+            android:layout_below="@+id/textView11"
+            android:layout_alignEnd="@+id/textView3"
+            android:layout_marginBottom="10dp" />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerMonth"
+            android:layout_toRightOf="@+id/spinnerDay"
+            android:layout_below="@+id/textView11"
+            />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerYear"
+            android:layout_toRightOf="@id/spinnerMonth"
+            android:layout_below="@+id/textView11"
+            />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/updateMember"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtEmail"
+            android:text="Confirm Update"
+            android:background="@drawable/round_button"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="20dp"></Button>
+
+    </RelativeLayout>
+</ScrollView>
+
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:foregroundGravity="center" />
+    <!-- The navigation drawer -->
+    <ListView
+        android:id="@+id/left_drawer"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#111"
+        android:choiceMode="singleChoice"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp" />
+</android.support.v4.widget.DrawerLayout>

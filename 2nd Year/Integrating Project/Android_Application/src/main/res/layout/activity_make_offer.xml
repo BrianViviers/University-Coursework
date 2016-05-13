@@ -1,0 +1,62 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#92DCE0">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            tools:context="com.richardimms.www.android0303.Activities.MakeOfferActivity">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/make_offer"
+                android:layout_gravity="center_horizontal"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:id="@+id/makeOfferTitle" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- The navigation drawer -->
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="155dp"
+            android:id="@+id/offerText"
+            android:layout_gravity="center"
+            android:text="@string/offer_text"
+            android:gravity="center" />
+
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id = "@+id/btnMake"
+            android:text="@string/make_offer"
+            android:layout_gravity="center_horizontal|bottom"></Button>
+    </FrameLayout>
+
+    <ListView
+        android:id="@+id/left_drawer"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#111"
+        android:choiceMode="singleChoice"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp" />
+
+</android.support.v4.widget.DrawerLayout>
